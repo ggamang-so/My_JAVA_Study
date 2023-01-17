@@ -23,6 +23,9 @@ public class StringBufferTest {
 
         sb.reverse();   // 문자열 뒤집기
         System.out.println("sb = " + sb.toString());
+        
+        sb.setLength(sb.length()-3);
+        System.out.println(sb.toString());
 
 
     }

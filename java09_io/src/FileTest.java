@@ -18,11 +18,11 @@ public class FileTest {
 		//mkdirs() : 하위의 폴더까지 같이 폴더 생성
 		//isDirectory : 파일인지 폴더인지 폴더면 : true / 파일이면 : false
 		//exists() : 폴더나 파일이 존재하는지 boolean으로 반환;
-		File file5 = new File("F://sample"); //mkdir() 폴더만들기 DOS 명령어
-		File file6 = new File("F://goguma//folder"); // mkdirs()
+		File file5 = new File("F://sample");
+		File file6 = new File("F://goguma//folder");
 		
-		file5.mkdir();
-		file6.mkdirs();
+		file5.mkdir(); //mkdir() 폴더만들기 DOS 명령어
+		file6.mkdirs(); // mkdirs()
 		
 		File file7 = new File(file5, "dddd.txt");
 		try {
