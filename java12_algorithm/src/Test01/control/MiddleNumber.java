@@ -17,28 +17,29 @@ import java.util.Arrays;
  * 
  */
 public class MiddleNumber {
-
+	static int a;
+	static int b;
+	static int c;
 	public MiddleNumber() {
 		
 	}
-	public MiddleNumber(int[] nums) {
-		Arrays.sort(nums);
-		System.out.println(nums[1]);
-		
-	}
+//	public MiddleNumber(int[] nums) {
+//		Arrays.sort(nums);
+//		System.out.println(nums[1]);
+//		
+//	}
 	
-	static int[] inputNumber() {
-			int[] nums = new int[3];
+	static int inputNumber() {
+//			int[] nums = new int[3];
+
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));	
-			nums[0] = Integer.parseInt(br.readLine());
-			nums[1] = Integer.parseInt(br.readLine());
-			nums[2] = Integer.parseInt(br.readLine());
-
-			
-		
-
-		
+//			for (int i = 0; i == nums.length-1; i++) {
+//			nums[i] = Integer.parseInt(br.readLine());
+//			}
+			a = Integer.parseInt(br.readLine());
+			b = Integer.parseInt(br.readLine());
+			c = Integer.parseInt(br.readLine());
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,13 +47,20 @@ public class MiddleNumber {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+			
+			if (a < b && a > c || a < b && a > c) {return a;}
+			if (b < a && b > c || b < a && b > c) {return b;}
+			if (c < a && c > b || c < a && c > b) {return c;}
+			return -1;
+	
 		
-		return nums;
+
+		
 	}
 
 
 	public static void main(String[] args) {
-		new MiddleNumber(inputNumber());
+		new MiddleNumber();
 		
 		
 	}
