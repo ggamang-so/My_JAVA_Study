@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.TreeSet;
+import java.util.*;
 
 public class LottoWithCollectionTeacher {
 	// 멤버변수
@@ -28,26 +25,40 @@ public class LottoWithCollectionTeacher {
 	}
 
 	// 번호 생성
-	public TreeSet<Integer> createLotto() {
+	public int[] createLotto() { // 원래 트리셋으로 했다가 버블정렬하면서 트리셋안쓰고 하는걸로 수정
 		// 번호 6개와 보너스 번호
-		TreeSet<Integer> lottoNum = new TreeSet<Integer>();
-		while (true) {
+//		TreeSet<Integer> lottoNum = new TreeSet<Integer>();
+		int[] nums = new int[7];
+		int[] lottoNum = new int[6];
+		for (int i = 0; i < nums.length; i++) {
 			int num = random.nextInt(45) + 1;
-			lottoNum.add(num);
-
-			if (lottoNum.size() == 7) {
-				bonus = num;
-				lottoNum.remove(num);
-				break;
+			nums[i] = num;
+			for (int j = 0; j < i; j++) {
+				if(nums[j] == nums[i]) {
+					i--;
+					break;
+				}
 			}
+		}
+		bonus = nums[6];
+		lottoNum = Arrays.copyOfRange(nums, 0,6);
+		for (int k = 0; k < lottoNum.length-1; k++) {
+			for (int h = 0; h < lottoNum.length-1-k; h++) {
+				if(lottoNum[h] > lottoNum[h+1]){
+					int temp = lottoNum[h];
+					lottoNum[h] = lottoNum[h+1];
+					lottoNum[h+1] = temp;
+				}
 
+			}
 		}
 		return lottoNum;
+
 	}
 
 	public void printGame() {
 
-		System.out.println(createLotto().toString() + " bonus = " + bonus);
+		System.out.println(Arrays.toString(createLotto()) + " bonus = " + bonus);
 	}
 
 	// 게임 추가 진행 여부

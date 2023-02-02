@@ -66,8 +66,8 @@ public class Array2Ex04 {
 	static void scorePrint() {
 		for(int r=0; r<stdScore.length; r++) {
 			if(r<stdCount) {System.out.printf("%s\t", stdName[r]);}
-			if(r==stdCount) System.out.printf("과목별총점\t");
-			if(r==stdCount+1) System.out.printf("과목별평균\t");
+			if(r==stdCount) System.out.print("과목별총점\t");
+			if(r==stdCount+1) System.out.print("과목별평균\t");
 			for(int c=0; c<stdScore[r].length; c++) {
 				System.out.printf("%d\t", stdScore[r][c]);
 			}
@@ -87,9 +87,6 @@ public class Array2Ex04 {
 			scoreRank();
 			scorePrint();
 
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
