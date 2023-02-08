@@ -1,5 +1,8 @@
 package beakjoon;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 //문제
 //신을 모시는 사당에는 신을 조각한 돌상 N개가 일렬로 놓여 있다. 각 돌상은 왼쪽 또는 오른쪽을 바라보고 서있다. 창영이는 연속한 몇 개의 돌상에 금칠을 하여 궁극의 깨달음을 얻고자 한다.
 //
@@ -25,7 +28,34 @@ public class Ex27210 {
 	}
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int dol = Integer.parseInt(scan.nextLine());
+		int[] arr = new int[dol];
+		int[][] sum = new int[dol][dol];
+		for (int i = 0; i < dol; i++) {
+			if(scan.nextInt()==1){
+				arr[i]=1;
+			}else{
+				arr[i]=-1;
+			}
+		}
+//		int max = 0;
+//		for (int i = 0; i < dol; i++) {
+//			for (int j = i; j < dol; j++) {
+//				if(j==0){
+//					sum[i][j] = arr[j];
+//				}else {
+//					sum[i][j] = sum[i][j - 1] + arr[j];
+//				}
+//				if(sum[i][j] > max){
+//					max = sum[i][j];
+//				}
+//			}
+//		}
+//		System.out.println(max);
+
 
 	}
-
 }
+
+
