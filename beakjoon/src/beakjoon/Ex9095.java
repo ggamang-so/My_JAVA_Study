@@ -1,8 +1,8 @@
 package beakjoon;
 
-public class ex9095 {
+public class Ex9095 {
 
-	public ex9095() {
+	public Ex9095() {
 		int result=0;
 		for (int i = 1 ; i < 10; i++ ) {
 			result += Math.pow(2, i-1);
@@ -13,7 +13,7 @@ public class ex9095 {
 	}
 
 	public static void main(String[] args) {
-		new ex9095();
+		new Ex9095();
 	}
 
 }
