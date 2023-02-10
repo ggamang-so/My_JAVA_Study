@@ -4,6 +4,7 @@ public class DBConnection {
 
     protected Connection con =  null;
     protected PreparedStatement ps = null;
+    protected CallableStatement cstmt = null;
     protected ResultSet rs = null;
 
     String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -41,6 +42,7 @@ public class DBConnection {
             if(rs != null) rs.close();
             if(ps != null) ps.close();
             if(con != null) con.close();
+            if(cstmt !=null) cstmt.close();
         }catch(Exception a){
             System.out.println("DB닫기 예외");
             a.printStackTrace();
