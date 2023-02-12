@@ -8,7 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4038fb3d-d41a-46da-b87d-720a4b04014a" name="Changes" comment=" - 2023-02-01 study">
-      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex16283.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex2309.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,7 @@
       <workItem from="1675950385158" duration="79000" />
       <workItem from="1676004467766" duration="1070000" />
       <workItem from="1676005711342" duration="12672000" />
-      <workItem from="1676207652492" duration="4069000" />
+      <workItem from="1676207652492" duration="7447000" />
     </task>
     <task id="LOCAL-00001" summary=" - 2023-02-01 study">
       <created>1675297867711</created>
