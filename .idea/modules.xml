@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/java09_io/java09_io.iml" filepath="$PROJECT_DIR$/java09_io/java09_io.iml" />
       <module fileurl="file://$PROJECT_DIR$/java10_jdbc_oracle/java10_jdbc_oracle.iml" filepath="$PROJECT_DIR$/java10_jdbc_oracle/java10_jdbc_oracle.iml" />
       <module fileurl="file://$PROJECT_DIR$/java12_algorithm/java12_algorithm.iml" filepath="$PROJECT_DIR$/java12_algorithm/java12_algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memberProject/memberProject.iml" filepath="$PROJECT_DIR$/memberProject/memberProject.iml" />
     </modules>
   </component>
 </project>
