@@ -11,17 +11,18 @@ public class Ex14400 {
         int[] xPos = new int[cnt];
         int[] yPos = new int[cnt];
         int x = 0, y=0;
+        String[] nums = null;
         for (int i = 0; i < cnt; i++) {
-            String[] nums = scan.nextLine().split(" ");
+            nums = scan.nextLine().split(" ");
             xPos[i] = Integer.parseInt(nums[0]);
             yPos[i] = Integer.parseInt(nums[1]);
         }
+
         Arrays.sort(xPos);
         Arrays.sort(yPos);
-        if (cnt % 2 == 0) {x = xPos[cnt/2-1];y = yPos[cnt/2-1];}
-        if (cnt % 2 != 0) {x = xPos[cnt/2];y = yPos[cnt/2];}
+        x=xPos[cnt/2+cnt%2-1];
+        y=yPos[cnt/2+cnt%2-1];
         int distance = 0;
-//        System.out.println(x + ", " + y);
         for (int i = 0; i < cnt; i++) {
             distance += (Math.abs(xPos[i]-x) + Math.abs(yPos[i]-y));
         }
