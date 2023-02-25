@@ -8,17 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4038fb3d-d41a-46da-b87d-720a4b04014a" name="Changes" comment=" - 2023-02-01 study">
-      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex14568.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex9095.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex2851.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex_2875.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex6131.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex14232.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex14232.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex14400.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex14400.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex15996.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex15996.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex16283.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex16283.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex17945.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex17945.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex18310.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex18310.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex2309.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex2309.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex9095.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +128,14 @@
       <workItem from="1676335046071" duration="1515000" />
       <workItem from="1676623818964" duration="142000" />
       <workItem from="1676709844423" duration="1265000" />
-      <workItem from="1676711571613" duration="7875000" />
+      <workItem from="1676711571613" duration="8094000" />
+      <workItem from="1676851614053" duration="496000" />
+      <workItem from="1676897411810" duration="316000" />
+      <workItem from="1676937522105" duration="1189000" />
+      <workItem from="1676994338093" duration="2281000" />
+      <workItem from="1677024782065" duration="130000" />
+      <workItem from="1677045503988" duration="186000" />
+      <workItem from="1677336313897" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary=" - 2023-02-01 study">
       <created>1675297867711</created>
@@ -177,11 +177,6 @@
           <url>file://$PROJECT_DIR$/java08_thread/src/ThreadTest02.java</url>
           <line>31</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex9095.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
