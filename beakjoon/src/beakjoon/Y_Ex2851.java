@@ -2,7 +2,7 @@ package beakjoon;
 
 import java.util.Scanner;
 
-public class Ex2851 {
+public class Y_Ex2851 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int idx = 0;
@@ -16,12 +16,14 @@ public class Ex2851 {
             }else{
                 sum[i] = sum[i-1] + arr[i];
             }
-        }
-        for (int i = 0; i < sum.length; i++) {
             if(result >= Math.abs(100-sum[i])){
+                result = Math.abs(100-sum[i]);
                 idx = i;
             }
         }
+
         System.out.println(sum[idx]);
+
+
     }
 }

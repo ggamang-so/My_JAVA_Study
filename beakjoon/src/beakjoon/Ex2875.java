@@ -2,7 +2,7 @@ package beakjoon;
 
 import java.util.Scanner;
 
-public class Ex_2875 {
+public class Ex2875 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
