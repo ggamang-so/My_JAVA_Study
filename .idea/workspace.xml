@@ -8,8 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4038fb3d-d41a-46da-b87d-720a4b04014a" name="Changes" comment=" - 2023-02-01 study">
-      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex25332.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex3273.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex2003.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex25332.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex25332.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex27210.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Y_Ex27210.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +146,9 @@
       <workItem from="1677744091277" duration="40000" />
       <workItem from="1677852231616" duration="4620000" />
       <workItem from="1677930480500" duration="5526000" />
-      <workItem from="1678020430437" duration="5669000" />
+      <workItem from="1678020430437" duration="8523000" />
+      <workItem from="1678061121337" duration="1406000" />
+      <workItem from="1678113905738" duration="5429000" />
     </task>
     <task id="LOCAL-00001" summary=" - 2023-02-01 study">
       <created>1675297867711</created>

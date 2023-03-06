@@ -1,7 +1,10 @@
 package beakjoon;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 //문제
 //신을 모시는 사당에는 신을 조각한 돌상 N개가 일렬로 놓여 있다. 각 돌상은 왼쪽 또는 오른쪽을 바라보고 서있다. 창영이는 연속한 몇 개의 돌상에 금칠을 하여 궁극의 깨달음을 얻고자 한다.
@@ -22,39 +25,30 @@ import java.util.Scanner;
 //
 //제한
 //1 ≤ N ≤ 100,000
-public class Ex27210 {
-
-	public Ex27210() {
-	}
-
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int dol = Integer.parseInt(scan.nextLine());
-		int[] arr = new int[dol];
-		int[][] sum = new int[dol][dol];
-		for (int i = 0; i < dol; i++) {
-			if(scan.nextInt()==1){
-				arr[i]=1;
+public class Y_Ex27210 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int n = Integer.parseInt(st.nextToken());
+		st = new StringTokenizer(br.readLine());
+		int[] sum = new int[n+1];
+		int min = 0;
+		int max = 0;
+		for (int i = 1; i <=n ; i++) {
+			int a = Integer.parseInt(st.nextToken());
+			if(a==1){
+				sum[i] = sum[i-1] + 1;
 			}else{
-				arr[i]=-1;
+				sum[i] = sum[i-1] - 1;
 			}
+
 		}
-//		int max = 0;
-//		for (int i = 0; i < dol; i++) {
-//			for (int j = i; j < dol; j++) {
-//				if(j==0){
-//					sum[i][j] = arr[j];
-//				}else {
-//					sum[i][j] = sum[i][j - 1] + arr[j];
-//				}
-//				if(sum[i][j] > max){
-//					max = sum[i][j];
-//				}
-//			}
-//		}
-//		System.out.println(max);
-
-
+		Arrays.sort(sum);
+		if(sum[0]*sum[n]<0){
+			System.out.println(Math.abs(sum[0])+Math.abs(sum[n]));
+		}else{
+			System.out.println(Math.max(Math.abs(sum[0]), Math.abs(sum[n])));
+		}
 	}
 }
 
