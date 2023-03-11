@@ -1,6 +1,9 @@
 package beakjoon;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Ex17074 {
 /*
@@ -24,39 +27,52 @@ public class Ex17074 {
 남규가 수 하나를 버려 정렬된 배열을 만드는 경우의 수를 출력한다.
  */
 
-    public int cal(){
-        Scanner scan = new Scanner(System.in);
-        int n = Integer.parseInt(scan.nextLine());
-        int[] arr = new int[n];
-        int index = 0;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        st=new StringTokenizer(br.readLine());
         int cnt=0;
-        arr[0] = scan.nextInt();
+        int result=0;
+        int idx=0;
+        int[] arr = new int[n];
+        arr[0] = Integer.parseInt(st.nextToken());
         for (int i = 1; i < n; i++) {
-            arr[i] = scan.nextInt();
-            if(arr[i] < arr[i-1]) {
+            arr[i] = Integer.parseInt(st.nextToken());
+            if(arr[i-1]>arr[i]){
                 cnt++;
-                index=i;
+                idx = i;
             }
         }
-        if(cnt == 0) return n;
-        if(cnt == 1) {
-            if (index==1) {
-                if (arr[index - 1] <= arr[index + 1]) return 2;
-                return 1;
+        if(cnt==0) result=n;
+        if(cnt==1){
+            if (n > 2) {
+                if(idx==1){
+                    result++;
+                    if(arr[idx-1]<=arr[idx+1]){
+                        result++;
+                    }
+                }
+                if(idx==n-1){
+                    result++;
+                    if(arr[idx-2]<=arr[idx]){
+                        result++;
+                    }
+                }
+                if(idx!=1&&idx!=n-1){
+                    if(arr[idx-1]<=arr[idx+1]){
+                        result++;
+                    }
+                    if(arr[idx]<=arr[idx+2]){
+                        result++;
+                    }
+                }
+            }else{
+                result=2;
             }
-            if (index == n-1) {
-                if (arr[index] >= arr[index - 2]) return 2;
-                return 1;
-            }
-            if(arr[index]>= arr[index-2] || arr[index-1] <= arr[index+1]) return 1;
 
         }
-            return 0;
-
-    }
-    public static void main(String[] args) {
-        System.out.println(new Ex17074().cal());
-
+        System.out.println(result);
 
     }
 }

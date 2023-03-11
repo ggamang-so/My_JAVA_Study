@@ -1,9 +1,8 @@
 package beakjoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ex14568 {
+public class Y_Ex14568 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt(); //사탕수

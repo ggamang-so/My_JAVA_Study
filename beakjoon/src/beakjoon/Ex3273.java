@@ -10,32 +10,20 @@ public class Ex3273 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int count=0;
-        int N = Integer.parseInt(st.nextToken());
-        st= new StringTokenizer(br.readLine());
-        int leftP = 0;
-        int rightP = 1;
-        int[] arr = new int[N];
-        for (int i = 0; i < N; i++) {
-            arr[i]= Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        int[] sum = new int[n+1];
+        for (int i = 1; i <= n; i++) {
+            sum[i] = Integer.parseInt(st.nextToken());
         }
-        int X = Integer.parseInt(br.readLine());
+        int k = Integer.parseInt(new StringTokenizer(br.readLine()).nextToken());
+        int left = 1;
+        int right = 2;
         while(true){
-            if(rightP==leftP||rightP<leftP){
-               rightP++;
-               continue;
-            }
-            if(arr[rightP] + arr[leftP] <X){
-                rightP++;
-            }else if(arr[rightP] + arr[leftP]==X){
-                count++;
-                rightP++;
-            }else{
-                leftP++;
-            }
-            if(rightP>N-1||leftP>N-1){
-                break;
-            }
+
+
         }
+
         System.out.println(count);
 
 
