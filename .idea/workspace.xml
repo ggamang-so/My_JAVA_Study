@@ -8,8 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4038fb3d-d41a-46da-b87d-720a4b04014a" name="Changes" comment=" - 2023-02-01 study">
+      <change afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex11728.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex3273.java" beforeDir="false" afterPath="$PROJECT_DIR$/beakjoon/src/beakjoon/Ex3273.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +154,8 @@
       <workItem from="1678366015476" duration="3950000" />
       <workItem from="1678406728900" duration="467000" />
       <workItem from="1678544598381" duration="3427000" />
-      <workItem from="1678548363851" duration="1709000" />
+      <workItem from="1678548363851" duration="2021000" />
+      <workItem from="1678630655642" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary=" - 2023-02-01 study">
       <created>1675297867711</created>
