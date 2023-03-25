@@ -18,8 +18,6 @@ public class Ex14400 {
             yPos[i] = Integer.parseInt(nums[1]);
         }
 
-        Arrays.sort(xPos);
-        Arrays.sort(yPos);
         x=xPos[cnt/2+cnt%2-1];
         y=yPos[cnt/2+cnt%2-1];
         int distance = 0;
